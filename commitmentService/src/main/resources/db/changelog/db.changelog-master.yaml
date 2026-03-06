@@ -1,0 +1,12 @@
+databaseChangeLog:
+  - changeSet:
+      id: 001_create_table_commitments
+      author: edoardo.oranger
+      changes:
+        - sqlFile:
+            path: db/changelog/migrations/001_create_table_commitments.sql
+            relativeToChangelogFile: false
+      rollback:
+        - sqlFile:
+            path: db/changelog/rollbacks/001_create_table_commitments.sql
+            relativeToChangelogFile: false
